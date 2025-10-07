@@ -5,22 +5,22 @@ function aceitarCookies() {
   document.getElementById("cookie-banner").style.display = "none";
 }
 
-window.onload = function() {
-  // Sempre mostra o banner ao carregar
-  document.getElementById("cookie-banner").style.display = "block";
-};
-
-
-// function aceitarCookies() {
-//   localStorage.setItem("cookie-aceito", "true");
-//   document.getElementById("cookie-banner").style.display = "none";
-// }
-
 // window.onload = function() {
-//   if (localStorage.getItem("cookie-aceito") === "true") {
-//     document.getElementById("cookie-banner").style.display = "none";
-//   }
+//   // Sempre mostra o banner ao carregar
+//   document.getElementById("cookie-banner").style.display = "block";
 // };
+
+
+function aceitarCookies() {
+  localStorage.setItem("cookie-aceito", "true");
+  document.getElementById("cookie-banner").style.display = "none";
+}
+
+window.onload = function() {
+  if (localStorage.getItem("cookie-aceito") === "true") {
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+};
 
 const toRoll = document.getElementById("header")
 const pixelsAmount = '50'
