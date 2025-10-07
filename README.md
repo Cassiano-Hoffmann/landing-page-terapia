@@ -40,6 +40,3 @@ O projeto foi criado com **HTML, CSS e JavaScript**, priorizando design elegante
    ```bash
    git clone https://github.com/Cassiano-Hoffmann/landing-page-terapia.git
 
-
-## 🧩 Estrutura de Pastas
-
